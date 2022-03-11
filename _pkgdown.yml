@@ -1,0 +1,14 @@
+url: https://pkg.garrickadenbuie.com/grkgdown
+
+template:
+  package: grkgdown
+
+reference:
+- title: Do some things
+  contents:
+  - '`test`'
+  - '`test2`'
+- title: Do some other things
+  contents:
+  - '`test3`'
+  - '`test4`'

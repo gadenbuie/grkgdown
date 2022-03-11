@@ -1,0 +1,76 @@
+
+authors:
+  Garrick Aden-Buie:
+    href: https://www.garrickadenbuie.com
+
+development:
+  mode: auto
+
+template:
+  opengraph:
+    twitter:
+      creator: "@grrrck"
+      card: summary
+  bootstrap: 5
+  bslib:
+    bg: "#f9fafa"
+    fg: "#0e181e"
+    primary: "#0b535d"   # blue-20
+    secondary: "#4a466f" # purple-20
+    info: "#4a636c"      # slate-30
+    success: "#7ab26f"   # green-60
+    warning: "#ef8c02"   # orange-60
+    danger: "#c94150"    # red-40
+    navbar-light-color: "#0b535d"
+    code_bg: "#f9fafa"
+    pre_bg: "#f9fafa"
+    heading_font: {google: "Roboto Slab"}
+    code_font: {google: "IBM Plex Mono"}
+    font-size-base: 1.1rem
+    pkgdown-nav-height: 72px
+    border-radius: 0
+    border-radius-sm: 0
+    border-radius-lg: 0
+    base_font: |
+      -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif
+  includes:
+    after_body: >
+      <script>window.jQuery('.navbar-brand + small').addClass(['badge', 'bg-secondary', 'text-light']).removeClass('text-muted')</script>
+
+navbar:
+  type: light
+  structure:
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - tutorials
+    right:
+    - news
+    - github
+    - twitter
+    - garrick
+  components:
+    home:
+      icon: ~
+      text: Overview
+      href: index.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    news:
+      icon: far fa-newspaper fa-lg
+      href: news/index.html
+      text: ""
+      title: "Changelog"
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/gadenbuie/js4shiny
+    garrick:
+      icon: fas fa-home fa-lg
+      href: https://garrickadenbuie.com
+      title: Garrick Aden-Buie
+    twitter:
+      icon: fab fa-twitter fa-lg
+      href: https://twitter.com/grrrck

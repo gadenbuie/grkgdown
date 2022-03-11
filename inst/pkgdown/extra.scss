@@ -1,0 +1,75 @@
+:root {
+  --bs-light-rgb: 249, 250, 250;
+}
+
+.bg-light {
+  --bs-bg-opacity: 0.95;
+}
+
+/* just for {js4shiny}
+pre {
+  border: 1px solid #cfd5d8;
+  border-radius: 0;
+  background-color: var(--bs-body-bg);
+  line-height: 1.33;
+}
+*/
+
+pre {
+  border: none;
+  border-left: 2px solid #cfd5d8;
+  border-radius: 0;
+  background-color: var(--bs-body-bg);
+  line-height: 1.33;
+}
+
+main pre a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+
+  &, h6 {
+    color: #09414a; /* --blue-10 */
+  }
+}
+
+.template-home #main + aside {
+  a {
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    text-decoration: underline;
+  }
+}
+
+.navbar-light .navbar-nav:first-of-type .nav-link:hover {
+  color: #0b535d;
+  box-shadow: inset 0 -0.1em 0 currentColor;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: var(--bs-secondary);
+  background-color: unset;
+}
+
+.navbar-light .navbar-nav:first-of-type .active > .nav-link {
+  color: #0b535d;
+	background-color: unset;
+  box-shadow: inset 0 -0.1em 0 #f54f61;
+}
+
+@media (max-width: 575.98px) {
+  .container main pre {
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+    margin-right: calc(var(--bs-gutter-x) * -.5 - 1px);
+    border-radius: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

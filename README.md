@@ -8,14 +8,14 @@ A pkgdown theme and template for my packages. [Bare-bones demo](https://pkg.garr
 
 ## Usage
 
-### `_pkgdown.yml`
+### _pkgdown.yml
 
 ```yaml
 template:
   package: grkgdown
 ```
 
-### `DESCRIPTION`
+### DESCRIPTION
 
 ```
 Config/Needs/website: gadenbuie/grkgdown

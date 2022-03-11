@@ -6,6 +6,8 @@ Authors@R:
            comment = c(ORCID = "0000-0002-7111-0077"))
 Description: My personal pkgdown docs style
 License: MIT + file LICENSE
+URL: https://github.com/gadenbuie/grkgdown
+BugReports: https://github.com/gadenbuie/grkgdown/issues
 Config/Needs/website: gadenbuie/grkgdown
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

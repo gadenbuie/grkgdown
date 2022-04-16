@@ -41,7 +41,6 @@ navbar:
   type: light
   structure:
     left:
-    - home
     - intro
     - reference
     - articles
@@ -52,10 +51,6 @@ navbar:
     - twitter
     - garrick
   components:
-    home:
-      icon: ~
-      text: Overview
-      href: index.html
     reference:
       text: Reference
       href: reference/index.html
@@ -64,9 +59,6 @@ navbar:
       href: news/index.html
       text: ""
       title: "Changelog"
-    github:
-      icon: fab fa-github fa-lg
-      href: https://github.com/gadenbuie/js4shiny
     garrick:
       icon: fas fa-home fa-lg
       href: https://garrickadenbuie.com

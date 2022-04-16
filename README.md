@@ -13,6 +13,12 @@ A pkgdown theme and template for my packages. [Bare-bones demo](https://pkg.garr
 ```yaml
 template:
   package: grkgdown
+
+navbar:
+  components:
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/gadenbuie/js4shiny
 ```
 
 ### DESCRIPTION

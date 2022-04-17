@@ -1,8 +1,8 @@
 pandoc: 2.17.1.1
-pkgdown: 2.0.1.9000
+pkgdown: 2.0.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-03-11T04:05Z
+last_built: 2022-04-17T11:58Z
 urls:
   reference: https://pkg.garrickadenbuie.com/grkgdown/reference
   article: https://pkg.garrickadenbuie.com/grkgdown/articles

@@ -1,5 +1,5 @@
 
-# grkgdown
+# grkgdown <a href='https://pkg.garrickadenbuie.com/grkgdown'><img src='man/figures/logo.png' align="right" height="116" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->

@@ -23,6 +23,24 @@ pre {
   padding: 0;
 }
 
+.hasCopyButton {
+  pre {
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  &:hover > pre {
+    background-color: HSL(180 2% 95% / 1);
+    outline: 0.5rem solid HSL(180 2% 95% / 1);
+  }
+  .btn-copy-ex {
+    top: 0;
+    right: 0;
+    transform: scale(0.8);
+    transform-origin: top right;
+  }
+}
+
 main pre a {
   text-decoration: none;
 

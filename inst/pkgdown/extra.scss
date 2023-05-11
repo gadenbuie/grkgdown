@@ -95,3 +95,27 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 1rem;
   }
 }
+
+.card.card-as-link {
+  position: relative;
+
+  a:last-of-type:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  a:last-of-type:after {
+    content: ' \2192';
+    display: inline-block;
+    margin-left: 0.25rem;
+    transition: transform 200ms ease-in-out;
+  }
+
+  &:hover a:last-of-type:after {
+    transform: translateX(5px);
+  }
+}

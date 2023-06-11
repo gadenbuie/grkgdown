@@ -94,7 +94,6 @@ Card markup is as follows. Give the card container `card-as-link` class. And ens
 ### Markup
 
 ```html
-<div class="d-grid" style="grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); gap: 1em;">
 <!-- card -->
 <div class="card card-as-link">
 <img src="https://source.unsplash.com/aTKJ22OrbrU" class="card-img-top" alt="">
@@ -106,5 +105,4 @@ Card markup is as follows. Give the card container `card-as-link` class. And ens
 </div>
 </div>
 <!-- /card -->
-</div>
 ```

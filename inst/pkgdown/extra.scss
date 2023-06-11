@@ -99,7 +99,18 @@ h1, h2, h3, h4, h5, h6 {
 .card.card-as-link {
   position: relative;
 
-  /* NOTE: maybe should be :before to be top-aligned when used in headers */
+  /* Expand the link to fill the entire card */
+  a.card-primary-link:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  // NOTE: maybe should swap :before and :after to ensure the arrow is
+  //       top-aligned when used in headers.
   a.card-primary-link:after {
     content: ' \2192';
     display: inline-block;

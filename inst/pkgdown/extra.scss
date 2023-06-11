@@ -99,20 +99,17 @@ h1, h2, h3, h4, h5, h6 {
 .card.card-as-link {
   position: relative;
 
-  a.card-primary-link:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-
+  /* NOTE: maybe should be :before to be top-aligned when used in headers */
   a.card-primary-link:after {
     content: ' \2192';
     display: inline-block;
     margin-left: 0.25rem;
     transition: transform 200ms ease-in-out;
+  }
+
+  a.card-primary-link.card-header-link:after {
+    position: absolute;
+    right: var(--bs-card-spacer-x, 1rem);
   }
 
   &:hover a.card-primary-link:after {

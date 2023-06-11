@@ -1,0 +1,110 @@
+---
+title: "link-card"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{link-card}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(grkgdown)
+```
+
+## Simple Cards
+
+```{=html}
+<div class="d-grid" style="grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); gap: 1em;">
+<!-- card -->
+<div class="card card-as-link">
+<div class="card-body">
+<h3 class="card-title mt-0 mb-3"><a href="../reference/index.html" class="card-primary-link card-header-link text-decoration-none">Reference</a></h3>
+<p class="card-text">Something about the detailed docs or API reference.</p>
+</div>
+</div>
+<!-- /card -->
+<!-- card -->
+<div class="card card-as-link">
+<div class="card-body">
+<h3 class="card-title mt-0 mb-3"><a href="../index.html" class="card-primary-link card-header-link text-decoration-none">Home</a></h3>
+<p class="card-text">Get up and running with a pkgdown template package.</p>
+</div>
+</div>
+<!-- /card -->
+</div>
+```
+
+### Card Markup
+
+Use a raw html block with a grid (`class="d-grid"`). I've used
+
+```css
+grid-template-columns: repeat(auto-fill, minmax(325px, 1fr))
+gap: 1em;
+```
+
+as inline styles to get decent behavior across all screen sizes.
+
+````{verbatim}
+```{=html}
+<div class="d-grid" style="grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); gap: 1em;">
+<!-- cards -->
+</div>
+```
+````
+
+Card markup is as follows. Give the card container `card-as-link` class. And ensure that there is one link with the class `card-primary-link`. If this link is in a header element, also give it `card-header-link`, othewise this could also be a right-aligned button at the end of the card.
+
+```html
+<!-- card -->
+<div class="card card-as-link">
+<div class="card-body">
+<h3 class="card-title mt-0 mb-3">
+<a href="../index.html" class="card-primary-link card-header-link text-decoration-none">Home</a>
+</h3>
+<p class="card-text">Get up and running with a pkgdown template package.</p>
+</div>
+</div>
+<!-- /card -->
+```
+
+## Complex Cards
+
+```{=html}
+<div class="d-grid" style="grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); gap: 1em;">
+<div class="card card-as-link">
+<img src="https://source.unsplash.com/aTKJ22OrbrU" class="card-img-top" alt="">
+<div class="card-body">
+<h3 class="card-title mt-0 mb-3">grkgdown</h3>
+</h3>
+<p class="card-text">Get up and running with a pkgdown template package.</p>
+<a href="../index.html" class="btn btn-primary float-end card-primary-link">Package Home</a>
+</div>
+</div>
+</div>
+```
+
+### Markup
+
+```html
+<div class="d-grid" style="grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); gap: 1em;">
+<!-- card -->
+<div class="card card-as-link">
+<img src="https://source.unsplash.com/aTKJ22OrbrU" class="card-img-top" alt="">
+<div class="card-body">
+<h3 class="card-title mt-0 mb-3">grkgdown</h3>
+</h3>
+<p class="card-text">Get up and running with a pkgdown template package.</p>
+<a href="../index.html" class="btn btn-primary float-end card-primary-link">Package Home</a>
+</div>
+</div>
+<!-- /card -->
+</div>
+```

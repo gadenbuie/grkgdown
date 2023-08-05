@@ -49,6 +49,15 @@ main pre a {
   }
 }
 
+.template-reference-index dt code a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.template-reference-index dt code:hover a {
+  color: var(--bs-red);
+}
+
 :not(pre) > code {
   font-size: 0.975em;
 }

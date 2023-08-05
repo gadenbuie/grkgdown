@@ -13,7 +13,7 @@ template:
       card: summary
   bootstrap: 5
   bslib:
-    bg: "#f9fafa"
+    bg: "#ffffff"
     fg: "#0e181e"
     primary: "#0b535d"   # blue-20
     secondary: "#4a466f" # purple-20

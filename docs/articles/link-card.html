@@ -15,8 +15,8 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="../deps/IBM_Plex_Mono-0.4.6.9000/font.css" rel="stylesheet">
-<link href="../deps/Outfit-0.4.6.9000/font.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="../deps/IBM_Plex_Mono-0.4.7.9000/font.css" rel="stylesheet">
+<link href="../deps/Outfit-0.4.7.9000/font.css" rel="stylesheet">
 <!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="link-card">
@@ -38,7 +38,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">grkgdown</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,7 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/link-card.html">link-card</a>
+    <a class="dropdown-item" href="../articles/version-dropdown.html">Version Dropdown Menu</a>
   </div>
 </li>
       </ul>
@@ -150,14 +151,14 @@ the class <code>card-primary-link</code>. If this link is in a header
 element, also give it <code>card-header-link</code>, othewise this could
 also be a right-aligned button at the end of the card.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co">&lt;!-- card --&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card card-as-link"</span><span class="kw">&gt;</span></span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-body"</span><span class="kw">&gt;</span></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="kw">&lt;h3</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-title mt-0 mb-3"</span><span class="kw">&gt;</span></span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"../index.html"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-primary-link card-header-link text-decoration-none"</span><span class="kw">&gt;</span>Home<span class="kw">&lt;/a&gt;</span></span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="kw">&lt;/h3&gt;</span></span>
-<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-text"</span><span class="kw">&gt;</span>Get up and running with a pkgdown template package.<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span>
-<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card card-as-link"</span><span class="dt">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-body"</span><span class="dt">&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h3</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-title mt-0 mb-3"</span><span class="dt">&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"../index.html"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-primary-link card-header-link text-decoration-none"</span><span class="dt">&gt;</span>Home<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-text"</span><span class="dt">&gt;</span>Get up and running with a pkgdown template package.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">&lt;!-- /card --&gt;</span></span></code></pre></div>
 </div>
 </div>
@@ -177,19 +178,17 @@ also be a right-aligned button at the end of the card.</p>
 <div class="section level3">
 <h3 id="markup">Markup<a class="anchor" aria-label="anchor" href="#markup"></a>
 </h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"d-grid"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); gap: 1em;"</span><span class="kw">&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="co">&lt;!-- card --&gt;</span></span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card card-as-link"</span><span class="kw">&gt;</span></span>
-<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://source.unsplash.com/aTKJ22OrbrU"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-img-top"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">""</span><span class="kw">&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-body"</span><span class="kw">&gt;</span></span>
-<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="kw">&lt;h3</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-title mt-0 mb-3"</span><span class="kw">&gt;</span>grkgdown<span class="kw">&lt;/h3&gt;</span></span>
-<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="kw">&lt;/h3&gt;</span></span>
-<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-text"</span><span class="kw">&gt;</span>Get up and running with a pkgdown template package.<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"../index.html"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"btn btn-primary float-end card-primary-link"</span><span class="kw">&gt;</span>Package Home<span class="kw">&lt;/a&gt;</span></span>
-<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span>
-<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span>
-<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a><span class="co">&lt;!-- /card --&gt;</span></span>
-<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co">&lt;!-- card --&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card card-as-link"</span><span class="dt">&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://source.unsplash.com/aTKJ22OrbrU"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-img-top"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">""</span><span class="dt">&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-body"</span><span class="dt">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h3</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-title mt-0 mb-3"</span><span class="dt">&gt;</span>grkgdown<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span> <span class="er">class</span><span class="ot">=</span><span class="st">"card-text"</span><span class="dt">&gt;</span>Get up and running with a pkgdown template package.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span> <span class="er">href</span><span class="ot">=</span><span class="st">"../index.html"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"btn btn-primary float-end card-primary-link"</span><span class="dt">&gt;</span>Package Home<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="co">&lt;!-- /card --&gt;</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
@@ -213,6 +212,6 @@ also be a right-aligned button at the end of the card.</p>
 
   
 
-  <script>window.jQuery('.navbar-brand + small').addClass(['badge', 'bg-secondary', 'text-light']).removeClass('text-muted')</script>
+  <script src="../doc-versions.js"></script>
 </body>
 </html>

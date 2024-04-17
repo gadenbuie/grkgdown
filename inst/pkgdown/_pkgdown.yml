@@ -21,7 +21,7 @@ template:
     success: "#7ab26f"   # green-60
     warning: "#ef8c02"   # orange-60
     danger: "#c94150"    # red-40
-    navbar-light-color: "#0b535d"
+    light: "#F9FAFA"
     code_bg: "#f9fafa"
     pre_bg: "#f9fafa"
     heading_font: {google: "Outfit"}
